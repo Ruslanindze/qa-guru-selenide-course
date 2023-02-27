@@ -17,14 +17,10 @@ public class CheckDropDownSolutions {
         open("https://github.com");
 
         // Задерживаем мышку над пунктом Solutions.
-        $(withTagAndText("button", "Solutions"))
-                .shouldBe(visible)
-                .hover();
+        $(withTagAndText("button", "Solutions")).hover();
 
         // Жмакаем на Enterprize
-        $(Selectors.withTagAndText("a", "Enterprise"))
-                .shouldBe(visible)
-                .click();
+        $(Selectors.withTagAndText("a", "Enterprise")).click();
 
         // Проверяем, что перешлия в страницу Enterprise.
         $(".enterprise-hero > div").shouldHave(

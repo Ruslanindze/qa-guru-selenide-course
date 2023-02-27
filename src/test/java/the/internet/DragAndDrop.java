@@ -8,6 +8,9 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class DragAndDrop {
+    // Инициализация прямоугольников А и В.
+    SelenideElement rectangleA = $("#column-a");
+    SelenideElement rectangleB = $("#column-b");
 
     @Test
     void testDragAndDropWithActionsSimple() {
@@ -15,10 +18,6 @@ public class DragAndDrop {
 
         // Открываем сайт.
         open("https://the-internet.herokuapp.com/drag_and_drop");
-
-        // Инициализация прямоугольников А и В?
-        SelenideElement rectangleA = $("#column-a");
-        SelenideElement rectangleB = $("#column-b");
 
         // Проверяем, что прямоугольник А слева, В - справа и присваиваем их переменным
         rectangleA.shouldHave(text("A"));
@@ -39,10 +38,6 @@ public class DragAndDrop {
         // Открываем сайт.
         open("https://the-internet.herokuapp.com/drag_and_drop");
 
-        // Инициализация прямоугольников А и В?
-        SelenideElement rectangleA = $("#column-a");
-        SelenideElement rectangleB = $("#column-b");
-
         // Проверяем, что прямоугольник А слева, В - справа и присваиваем их переменным
         rectangleA.shouldHave(text("A"));
         rectangleB.shouldHave(text("B"));
@@ -61,10 +56,6 @@ public class DragAndDrop {
 
         // Открываем сайт.
         open("https://the-internet.herokuapp.com/drag_and_drop");
-
-        // Инициализация прямоугольников А и В?
-        SelenideElement rectangleA = $("#column-a");
-        SelenideElement rectangleB = $("#column-b");
 
         // Проверяем, что прямоугольник А слева, В - справа и присваиваем их переменным
         rectangleA.shouldHave(text("A"));
